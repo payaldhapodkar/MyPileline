@@ -10,9 +10,9 @@ pipeline {
     stage('Run a coomand') {
       steps {
         sh '''pwd
-                      ls
-                      cal 
-                    '''
+              ls
+              cal 
+              '''
       }
     }
 
@@ -59,6 +59,19 @@ pipeline {
         echo 'Deploying to prod...'
       }
     }
-
   }
+  post {
+        success {
+            echo 'Pipeline succeeded!'
+            // Additional actions to perform on success
+        }
+        failure {
+            echo 'Pipeline failed!'
+            // Additional actions to perform on failure
+        }
+        always {
+            echo 'Cleaning up...'
+            // Actions to perform regardless of success or failure
+        }
+    }
 }
