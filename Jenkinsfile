@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh '''pwd
                       ls
-                      Cal'''
+                      cal 2023'''
             }
         }
         stage('Print Message') {
