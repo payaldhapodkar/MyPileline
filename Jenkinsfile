@@ -19,4 +19,5 @@ pipeline {
                 // Here you would put commands to deploy your project
             }
         }
+    }
          
