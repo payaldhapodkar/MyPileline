@@ -10,8 +10,13 @@ pipeline {
         stage('Run a coomand') {
             steps {
                 sh '''pwd
-                        ls
-                        cal'''
+                      ls
+                      cal'''
+            }
+        }
+        stage('Print Message') {
+            steps {
+               echo 'Hello this is our jenkinsfile'
             }
         }
         stage('Test') {
