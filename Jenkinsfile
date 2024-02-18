@@ -17,4 +17,6 @@ pipeline {
             steps {
                 echo 'Deploying...'
                 // Here you would put commands to deploy your project
+            }
+        }
          
