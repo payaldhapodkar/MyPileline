@@ -10,7 +10,8 @@ pipeline {
         stage('Run a coomand') {
             steps {
                 sh '''pwd
-                      ls'''
+                      ls
+                      cal'''
             }
         }
         stage('Print Message') {
