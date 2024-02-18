@@ -13,6 +13,7 @@ pipeline {
                       ls
                       cal'''
             }
+        }
         stage('Print Message') {
             steps {
                echo 'Hello this is our jenkinsfile'
