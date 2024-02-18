@@ -17,8 +17,19 @@ pipeline {
     }
 
     stage('Print Message') {
-      steps {
-        echo 'Hello this is our jenkinsfile'
+      parallel {
+        stage('Print Message') {
+          steps {
+            echo 'Hello this is our jenkinsfile'
+          }
+        }
+
+        stage('Parallel print') {
+          steps {
+            echo 'Parallel message print'
+          }
+        }
+
       }
     }
 
