@@ -61,4 +61,7 @@ pipeline {
     }
 
   }
+  environment {
+    user = 'payal'
+  }
 }
