@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh '''pwd
                       ls
-                      cal 2024
+                      cal
                     '''
             }
         }
